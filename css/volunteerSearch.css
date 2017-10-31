@@ -1,0 +1,62 @@
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/*
+.header {
+  background: rgb(107, 133, 155);
+  background: rgba(107, 133, 155, 0.90);
+}
+
+.header h1 {
+  color: rgb(230, 245, 255);
+  text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+                 0px -5px 35px rgba(255,255,255,0.3);
+}
+.header hr {
+  height: 4px;
+  background-color: rgb(230, 245, 255);
+}
+*/
+
+.container {
+  border: 2px groove rgb(230, 245, 255);
+  border-radius: 25px;
+  background: rgb(230, 245, 255);
+  background: rgba(230, 245, 255, 0.95);
+  width: 600px;
+}
+
+.container input {
+  text-align: center;
+}
+
+.alignContainer {
+  width: 425px;
+  white-space: nowrap;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+  /*
+  color: rgb(107, 133, 155);
+  */
+  font-size: 20px;
+}
+
+/*
+#bg {
+  z-index:-1;
+}
+*/
+
+#zip {
+  width: 80%;
+}
+
+#dist {
+  display: inline;
+  width: 45%;
+  margin: 5px;
+}
