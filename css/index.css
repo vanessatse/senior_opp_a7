@@ -23,7 +23,6 @@ body {
 .container h4 {
 	position: relative;
 	top: 40px;
-	left: -120px;
 	color: black;
 }
 
@@ -44,7 +43,6 @@ body {
 	font-size: 85px;
 	position: relative;
 	top: 25px;
-	right: 125px;
 }
 
 .button {
@@ -72,15 +70,17 @@ body {
 }
 
 #signUpBtn {
+	width: 150px;
 	background-color: #bd01bd;
-	top: 55px;
-	right: 150px;
+	top: 20px;
+	right: 50px;
 }
 
 #loginBtn {
+	width: 150px;
 	background-color: #2ad200;
-	top: 55px;
-	right: -40px;
+	top: 100px;
+	right: 50px;
 }
 
 #employerBtn {
