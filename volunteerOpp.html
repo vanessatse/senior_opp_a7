@@ -5,18 +5,18 @@
   <meta charset="utf-8">
   <title>Volunteer Opportunities</title>
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-  <link rel="stylesheet" type="text/css" href="css/volunteerSearch.css">
+  <link rel="stylesheet" type="text/css" href="css/volunteerOpp.css">
 </head>
 
 <body>
   <div class="header">
-    <br>
+    <a class="button" id="btnHome" href="index.html">Home</a>
     <h1 class="text-center">Volunteer Opportunities</h1>
       <hr/>
   </div>
-  <br>
+
   <div class="container">
-    <form action = "" id="form" novalidate>
+    <form id="vForm">
       <br>
       <div class="form-group row justify-content-center">
         <div class="col-md-11">
@@ -32,6 +32,7 @@
             <small id="requiredText" class="text-muted">required</small>
             <div class="invalid-feedback row">Invalid zip code.</div>
           </div>
+          <p hidden class="errText" id="zipHelp">Please enter a valid 5-digit numeric zip code.</p>
         </div>
         <div class="form-group row justify-content-center no-gutters">
           <div class="col-md-6 text-right">
@@ -42,6 +43,7 @@
                 <br><small id="requiredText" class="text-muted">required</small>
                 <div class="invalid-feedback row">Invalid distance.</div>
           </div>
+          <p hidden class="errText" id="distHelp">Please enter a numeric distance less than 300.</p>
         </div>
         <br>
         <div class="form-group row justify-content-center">
@@ -81,13 +83,14 @@
         <button type="submit" class="btn btn-outline-primary btn-large" id="clearBtn">Clear</button>
         </div>
         <div class="col-4 text-center">
-        <button type="submit" class="btn btn-primary btn-large" id="submitBtn">Submit</button>
+        <button type="button" class="btn btn-primary btn-large" id="submitBtn">Submit</button>
         </div>
       </div>
       <br>
     </form>
   </div>
-
-  <script type="text/javascript" src="js/volunteerSearch.js"></script>
+  <br>
+  <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/volunteerOpp.js"></script>
 </body>
 </html>
