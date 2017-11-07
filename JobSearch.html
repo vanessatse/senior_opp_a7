@@ -1,34 +1,86 @@
 <!DOCTYPE HTML>
 
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Job Opportunities</title>
-    <!--
-    <link rel="stylesheet" type="text/css" href="css/JobSearch.css">
-    -->
-  </head>
+<head>
+  <meta charset="utf-8">
+  <title>Job Opportunities</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/jobSearch.css">
+</head>
 
-  <body>
-    <center>
-      <div class="header" id ="Login">
-        <br>
-        <h1 class="text-center">Fill in information.</h1>
-        <hr/>
-      </div>
-      <br>
-
+<body>
+  <div class="header">
+    <a class="button" id="btnHome" href="index.html">Home</a>
+    <h1 class="text-center">Job Opportunities</h1>
       <hr/>
-      <div class="button">
-        <a button class="btn btn-primary btn-large" href = "index.html">Back</button>
+  </div>
+
+  <div class="container">
+    <form action="jobResults.html" id="vForm">
+      <br>
+      <div class="form-group row justify-content-center">
+        <div class="col-md-11">
+          <input type="text" class="form-control form-control-lg" id="keywords" placeholder="Enter keywords or phrases">
+        </div>
       </div>
       <br>
-
-      <div class="button">
-        <a button class="btn btn-outline-primary btn-large" href="jobResults.html">Submit!</button>
+      <div class="alignContainer">
+        <div class="form-group row justify-content-center no-gutters">
+          <label for="zip" class="col-form-label col-md-auto">Zip Code:&nbsp;</label>
+          <div class="col-md-3">
+            <input type="text" class="form-control" id="zip" aria-describedby="requiredText" maxlength="5" required>
+            <small id="requiredText" class="text-muted">required</small>
+            <div class="invalid-feedback row">Invalid zip code.</div>
+          </div>
+          <p hidden class="errText" id="zipHelp">Please enter a valid 5-digit numeric zip code.</p>
+        </div>
+        <div class="form-group row justify-content-center no-gutters">
+          <div class="col-md-6 text-right">
+          <label for="dist" class="col-form-label">Find opportunities within&nbsp;</label>
+        </div>
+          <div class="col-md-4 text-left" id="divDist">
+                <input type="text" class="form-control" id="dist" aria-describedby="requiredText" maxlength="3" required>miles
+                <br><small id="requiredText" class="text-muted">required</small>
+                <div class="invalid-feedback row">Invalid distance.</div>
+          </div>
+          <p hidden class="errText" id="distHelp">Please enter a numeric distance less than 300.</p>
+        </div>
+        <br>
+        <div class="form-group row justify-content-center">
+          <label class="col-md-4">Job Type</label>
+          <div class="col-md-5">
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" value="">Full-Time
+              </label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" value="">Part-Time
+              </label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" value="">Temporary
+              </label>
+            </div>
+          </div>
+        </div>
       </div>
       <br>
-
-    </center>
-  </body>
+      <div class="form-group row justify-content-around">
+        <div class="col-4 text-center">
+        <button type="submit" class="btn btn-outline-primary btn-large" id="clearBtn">Clear</button>
+        </div>
+        <div class="col-4 text-center">
+        <button type="button" class="btn btn-primary btn-large" id="submitBtn">Submit</button>
+        </div>
+      </div>
+      <br>
+    </form>
+  </div>
+  <br>
+  <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/jobSearch.js"></script>
+</body>
 </html>
