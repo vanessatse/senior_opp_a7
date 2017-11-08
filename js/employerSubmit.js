@@ -1,10 +1,12 @@
 $(document).ready(function() {
   $('#submitBtn').click(function() {
-    if (validateForm())
-      $('#signUpForm').submit();
+    if (validateForm()) {
+      alert("Your listing has been submitted and is pending review.\nYou will receive an email once your listing is posted.");
+      window.location.href="index.html";
+    }
   });
   $('#clearBtn').click(function() {
-    document.getElementById("signUpForm").reset();
+    document.getElementById("listingForm").reset();
   });
   $('#homeBtn').click(function() {
    location.href = "index.html";

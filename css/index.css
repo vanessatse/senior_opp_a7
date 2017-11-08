@@ -65,7 +65,6 @@ body {
 
 .oppContainer {
 	position: relative;
-	top: 100px;
 }
 
 #signUpBtn {
@@ -85,9 +84,7 @@ body {
 #employerBtn {
 	background-color: #00da9e;
 	position: absolute;
-	top: 500px;
-	right: 590px;
-	padding: 50px 80px;
+	padding: 30px 20px;
 }
 
 
