@@ -1,11 +1,11 @@
 $(document).ready(function() {
   $('#submitBtn').click(function() {
-    if (isValidEmail()) {
+    if (true) {
       alert("Check your email to reset your password.");
       window.location.href="login.html";
     }
   });
-  
+
   $('#homeBtn').click(function() {
    location.href = "index.html";
   });
