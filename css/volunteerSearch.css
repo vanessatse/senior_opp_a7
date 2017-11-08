@@ -8,7 +8,7 @@ body {
 .header {
   background: rgb(107, 133, 155);
   background: rgba(107, 133, 155, 0.90);
-  margin-bottom: 30px;
+
 }
 
 .button {
@@ -36,7 +36,6 @@ body {
 }
 
 .header h1 {
-  position: relative;
   bottom: 25px;
   color: rgb(230, 245, 255);
   text-shadow: 2px 8px 6px rgba(0,0,0,0.2),

@@ -1,6 +1,12 @@
 form {
-  margin-top: 10%;
+  margin-top: 5%;
 }
+
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+
 .header {
   position: relative;
   margin-top: 2%;
@@ -11,13 +17,16 @@ form {
   display: table;
 }
 
+.header .col {
+  text-align: center;
+}
+
 #employerBtn {
-  float: right;
-  font-size: 24px;
+  font-size: 16px;
 }
 
 .button {
-  border-radius: 0;
+  border-radius: 3px;
   background-color: #0099ff;
   border: none;
   color: white;
@@ -31,7 +40,17 @@ form {
 }
 
 #signUpBtn {
-  width: 100px;
   padding: 10px 10px;
   background-color: #bd01bd;
+}
+
+#signUpBtn:hover {
+  padding: 10px 10px;
+  background-color: white;
+  color: #bd01bd;
+}
+
+#accHelp {
+  color: red;
+  font-size: 15px;
 }

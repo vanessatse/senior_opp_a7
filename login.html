@@ -4,26 +4,29 @@
   <title>Login</title>
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="css/login.css">  
-  <meta name="viewport" content="width=device-width, initial-scale=1">  
 </head>
 <body>
   <div class="container">
-    <div class="header">
+    <div class="row header">
+      <div class="col">
       <h1>Login</h1>
-      <a href="employerSubmit.html" id="employerBtn">Employer? Click here.</a>
-      <a class="button" href="signUp.html" id="signUpBtn">Sign up</a>
-      
     </div>
+    <div class="col">
+      <a class="button" href="signUp.html" id="signUpBtn">Sign up</a>
+      <a href="employerSubmit.html" id="employerBtn">Employer? Click here.</a>
+    </div>
+  </div>
     <form action="index.html" id="loginForm">
       <div class="form-group">
         <label for="email">Email Address</label>
-        <input type="email" class="form-control" id="email">
+        <input type="email" class="form-control" maxlength="256" id="email">
       </div>
       <div class="form-group">
         <label for="password">Password</label>
-        <input type="password" class="form-control" id="password">
+        <input type="password" class="form-control" maxlength="120" id="pass">
         <a href="forgotPass.html">Forgot your password? Click here.</a>
       </div>
+      <p hidden id="accHelp">Incorrect email and/or password.</p>
       <br>
       <div class="form-row justify-content-around">
         <div class="col text-center">

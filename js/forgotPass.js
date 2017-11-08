@@ -1,8 +1,12 @@
 $(document).ready(function() {
   $('#submitBtn').click(function() {
-    if (true) {
+    if (isValidEmail()) {
       alert("Check your email to reset your password.");
-      window.location.href="login.html";
+      $("#forgotPassForm").submit();
+    }
+    else {
+      $("#accHelp").show();
+      $("#accHelp").removeAttr("hidden");
     }
   });
 
