@@ -13,15 +13,19 @@ $(document).ready(function() {
   });
 
   function validateForm() {
+    var org = $("#listingOrg").val();
+    var title = $("#listingTitle").val();
+    var info = $("#listingInfo").val();
     return true;
   }
 
   function isValidEmail() {
-    var email = $("#email").val();
+    var email = $("#listingEmail").val();
     var emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return emailRegex.test(email);
   }
 
-  function isValidPass() {
+  function isValidOrg() {
+    var org = $("#listingOrg").val();
   }
 });
