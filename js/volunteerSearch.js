@@ -22,6 +22,10 @@ $(document).ready(function() {
       $('#distHelp').hide();
   });
 
+  $('#clearBtn').click(function() {
+    document.getElementById("signUpForm").reset();
+  });
+
   function validateForm() {
     var validZip = isValidZip();
     var validDist = isValidDist();

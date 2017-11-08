@@ -40,7 +40,6 @@ body {
   text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
                  0px -5px 35px rgba(255,255,255,0.3);
 	letter-spacing: 2px;
-	font-size: 85px;
 	position: relative;
 	top: 25px;
 }
@@ -70,17 +69,17 @@ body {
 }
 
 #signUpBtn {
-	width: 150px;
+	width: 100px;
 	background-color: #bd01bd;
-	top: 20px;
-	right: 50px;
+	top: 5%;
+	right: 1%;
 }
 
 #loginBtn {
-	width: 150px;
+	width: 100px;
 	background-color: #2ad200;
-	top: 100px;
-	right: 50px;
+	bottom: 10%;
+	right: 1%;
 }
 
 #employerBtn {
