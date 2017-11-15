@@ -2,6 +2,7 @@ $(document).ready(function() {
   $('#submitBtn').click(function() {
     if (validateForm()) {
       localStorage.setItem('userName', ($('#fName').val() + " " + $('#lName').val()));;
+      $('#signUpForm').submit();
     }
   });
 
