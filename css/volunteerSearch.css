@@ -1,4 +1,11 @@
+.errText {
+  color: red;
+  font-size: 15px;
+}
 
+.errRow {
+  text-align: center;
+}
 #keywords {
   width: 400px;
 }
@@ -7,15 +14,6 @@
   width: 100px;
 }
 
-#errRow {
-  text-align: center;
-}
-
 #dist {
   width: 60px;
-}
-
-.errText {
-  color: red;
-  font-size: 15px;
 }

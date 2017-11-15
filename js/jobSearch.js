@@ -1,7 +1,16 @@
 $(document).ready(function() {
   $('#submitBtn').click(function() {
     if (validateForm())
-      $('#vForm').submit();
+      $('#jobForm').submit();
+  });
+
+  $('#clearBtn').click(function() {
+    $(".errText").hide();
+    document.getElementById("jobForm").reset();
+  });
+
+  $('#homeBtn').click(function() {
+    location.href = "index.html";
   });
 
   $('#zip').change(function() {
