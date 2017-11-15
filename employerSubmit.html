@@ -13,15 +13,16 @@
   <h1>Submit a Listing</h1>
   <form action="index.html" id="listingForm">
     <label>What are you submitting?</label>
+    <div class="errRow"><p hidden class="errText" id="typeHelp">Please select an event type.</p></div>
     <div class="form-row justify-content-around">
     <div class="form-check form-check-inline">
       <label class="form-check-label">
-        <input class="form-check-input" name="listingType" type="radio">Volunteer Event
+        <input class="form-check-input" name="listingType" id="volType" type="radio">Volunteer Event
       </label>
     </div>
     <div class="form-check form-check-inline">
       <label class="form-check-label">
-        <input class="form-check-input" name="listingType" type="radio">Job Listing
+        <input class="form-check-input" name="listingType" id="jobType" type="radio">Job Listing
       </label>
     </div>
   </div>

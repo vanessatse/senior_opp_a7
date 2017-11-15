@@ -13,6 +13,14 @@ $(document).ready(function() {
    location.href = "index.html";
   });
 
+  $("#volType").change(function() {
+      $('#typeHelp').hide();
+  });
+
+  $("#jobType").change(function() {
+      $('#typeHelp').hide();
+  });
+
   $("#listingOrg").change(function() {
     var org = $("#listingOrg").val();
     if (!org) {
@@ -55,10 +63,18 @@ $(document).ready(function() {
 
   function validateForm() {
     var validated = true;
+
+    var type = $("input[name=listingType]:checked").val();
     var org = $("#listingOrg").val();
     var email = isValidEmail();
     var title = $("#listingTitle").val();
     var info = $("#listingInfo").val();
+
+    if (!type) {
+      $('#typeHelp').show();
+      $('#typeHelp').removeAttr("hidden");
+      validated = false;
+    }
 
     if (!info) {
       $('#infoHelp').show();
