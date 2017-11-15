@@ -4,6 +4,15 @@ $(document).ready(function() {
       $('#vForm').submit();
   });
 
+  $('#clearBtn').click(function() {
+    $(".errText").hide();
+    document.getElementById("vForm").reset();
+  });
+
+  $('#homeBtn').click(function() {
+   location.href = "index.html";
+  });
+  
   $('#zip').change(function() {
     if (!isValidZip()) {
       $('#zipHelp').show();
@@ -22,9 +31,7 @@ $(document).ready(function() {
       $('#distHelp').hide();
   });
 
-  $('#clearBtn').click(function() {
-    document.getElementById("signUpForm").reset();
-  });
+
 
   function validateForm() {
     var validZip = isValidZip();
