@@ -1,7 +1,8 @@
 $(document).ready(function() {
   $('#submitBtn').click(function() {
-    if (validateForm())
-      $('#signUpForm').submit();
+    if (validateForm()) {
+      localStorage.setItem('userName', ($('#fName').val() + " " + $('#lName').val()));;
+    }
   });
 
   $('#clearBtn').click(function() {
@@ -82,7 +83,7 @@ $(document).ready(function() {
   function isValidName() {
     var fName = $('#fName').val();
     var lName = $('lName').val();
-    return (fName && lName);
+    return !(fName == '' && lName == '');
   }
 
   function isValidEmail() {
