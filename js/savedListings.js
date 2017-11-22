@@ -15,6 +15,7 @@ $(document).ready(function() {
   }
   savedItem = localStorage.getItem("title2");
   if (savedItem) {
+    $(".noSaved").hide();
     $("#title2").text(savedItem);
     $("#img2").attr('src', localStorage.getItem("img2"));
     $("#more2").attr('href', localStorage.getItem("more2"));
@@ -26,6 +27,7 @@ $(document).ready(function() {
   }
   savedItem = localStorage.getItem("title3");
   if (savedItem) {
+    $(".noSaved").hide();
     $("#title3").text(savedItem);
     $("#img3").attr('src', localStorage.getItem("img3"));
     $("#more3").attr('href', localStorage.getItem("more3"));
@@ -37,6 +39,7 @@ $(document).ready(function() {
   }
   savedItem = localStorage.getItem("title4");
   if (savedItem) {
+    $(".noSaved").hide();
     $("#title4").text(savedItem);
     $("#img4").attr('src', localStorage.getItem("img4"));
     $("#more4").attr('href', localStorage.getItem("more4"));
@@ -48,17 +51,19 @@ $(document).ready(function() {
   }
   savedItem = localStorage.getItem("title5");
   if (savedItem) {
-    $("#title1").text(savedItem);
-    $("#img1").attr('src', localStorage.getItem("img5"));
-    $("#more1").attr('href', localStorage.getItem("more5"));
-    $("#cont1").attr('href', localStorage.getItem("cont5"));
-    $("#saved1").show();
+    $(".noSaved").hide();
+    $("#title5").text(savedItem);
+    $("#img5").attr('src', localStorage.getItem("img5"));
+    $("#more5").attr('href', localStorage.getItem("more5"));
+    $("#cont5").attr('href', localStorage.getItem("cont5"));
+    $("#saved5").show();
     hasListing = true;
   } else {
     $("#saved5").hide();
   }
   savedItem = localStorage.getItem("title6");
   if (savedItem) {
+    $(".noSaved").hide();
     $("#title6").text(savedItem);
     $("#img6").attr('src', localStorage.getItem("img6"));
     $("#more6").attr('href', localStorage.getItem("more6"));

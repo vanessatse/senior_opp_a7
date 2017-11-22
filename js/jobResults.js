@@ -7,8 +7,7 @@ $(document).ready(function() {
           localStorage.setItem("img" + i.toString(), "images/solid-silver-gray-fabric_medium.jpg");
           localStorage.setItem("more" + i.toString(), "list/job1.html");
           localStorage.setItem("cont" + i.toString(), "cont/job1.html");
-          $('#saveJob1Btn').prop('disabled', true);
-          $('#saveJob1Btn').attr('disabled', true);
+          $('#saveJob1Btn').hide();
           break;
       }
     }
@@ -22,7 +21,7 @@ $(document).ready(function() {
         localStorage.setItem("img" + i.toString(), "images/solid-silver-gray-fabric_medium.jpg");
         localStorage.setItem("more" + i.toString(), "list/job2.html");
         localStorage.setItem("cont" + i.toString(), "cont/job2.html");
-        $('#saveJob2Btn').prop('disabled', true);
+        $('#saveJob2Btn').hide();
         break;
       }
     }
@@ -36,7 +35,7 @@ $(document).ready(function() {
         localStorage.setItem("img" + i.toString(), "images/solid-silver-gray-fabric_medium.jpg");
         localStorage.setItem("more" + i.toString(), "list/job3.html");
         localStorage.setItem("cont" + i.toString(), "cont/job3.html");
-        $('#saveJob3Btn').prop('disabled', true);
+        $('#saveJob3Btn').hide();
         break;
       }
     }
