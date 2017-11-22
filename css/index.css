@@ -22,10 +22,17 @@ body {
   margin-left: 1%;
 }
 
-.header1 {
-  position: relative;
-  display: inline-block;
+.header p {
+  text-align: left;
+  font-family: Gotham, 'Helvetica Neue', Helvetica, Arial, 'sans-serif';
+  color: #ffffff;
+  text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+                0px -5px 35px rgba(255,255,255,0.3);
+  letter-spacing: 2px;
+  font-size: 30px;
+  font-weight: bold;
 }
+
 .loggedIn {
   position: relative;
   margin-right: 0%;
@@ -88,6 +95,17 @@ body {
   margin-bottom: 5%;
 }
 
+#savedBtn {
+  width: 100px;
+  padding: 10px 10px;
+  background-color: #0099ff;
+}
+
+#savedBtn:hover {
+  background-color: white;
+  color: #0099ff;
+}
+
 #signUpBtn {
 	width: 100px;
   padding: 10px 10px;
@@ -109,6 +127,18 @@ body {
   background-color: white;
   color: #0099ff;
 }
+
+#logoutBtn {
+  width: 100px;
+  padding: 10px 10px;
+  background-color: #0099ff;
+}
+
+#logoutBtn:hover {
+  background-color: white;
+  color: #0099ff;
+}
+
 
 #employerBtn {
 	padding: 25px 25px;

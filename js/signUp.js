@@ -1,7 +1,10 @@
 $(document).ready(function() {
   $('#submitBtn').click(function() {
     if (validateForm()) {
-      localStorage.setItem('userName', ($('#fName').val() + " " + $('#lName').val()));;
+      localStorage.setItem('loggedIn', 1);
+      localStorage.setItem('userEmail', $("#email").val());
+      localStorage.setItem('userFirst', $("#fName").val());
+      localStorage.setItem('userLast', $("#lName").val());
       $('#signUpForm').submit();
     }
   });

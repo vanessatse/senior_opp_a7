@@ -1,8 +1,12 @@
 $(document).ready(function() {
-  var email = localStorage.getItem('userEmail');
-  if (email) {
+  var loggedIn = localStorage.getItem('userEmail');
+  if (loggedIn) {
     $(".loggedIn").show();
     $(".loggedOut").hide();
+    var firstName = localStorage.getItem('userFirst');
+    if (!firstName)
+      firstName = "User";
+    $("#helloUser").text("Hello, " + firstName);
   }
   else {
     $(".loggedIn").hide();
