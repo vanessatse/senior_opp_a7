@@ -22,6 +22,15 @@ body {
   margin-left: 1%;
 }
 
+.header1 {
+  position: relative;
+  display: inline-block;
+}
+.loggedIn {
+  position: relative;
+  margin-right: 0%;
+}
+
 .header h1 {
 	display: table;
 	font-weight: bold;

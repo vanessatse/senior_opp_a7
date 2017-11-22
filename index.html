@@ -12,16 +12,22 @@
 
 <body>
   <div class ="container">
-    <div class="row header">
+    <div class="header">
       <h1> Senior Opportunities</h1>
       <div class="row userContainer">
-      <div class="col">
+      <div class="col loggedIn">
+        <a class="button" id="savedBtn" href="savedListings.html" alt="Saved Listings">Saved Listings</a>
+      </div>
+      <div class="col loggedOut">
         <a class="button" id="signUpBtn" href="signUp.html" alt="Sign Up">Sign Up</a>
       </div>
-      <div class="col">
+      <div class="col loggedIn">
+        <a class="button" id="logoutBtn" href="index.html" alt="Log Out">Log Out</a>
+      </div>
+      <div class="col loggedOut">
         <a class="button" id="loginBtn" href="login.html" alt="Login">Login</a>
       </div>
-    </div>
+      </div>
       <p><h4>Giving senior citizens more ways to give back.</h4></p>
     </div>
     <div class="row searchContainer">
@@ -38,6 +44,8 @@
         </div>
       </div>
   </div>
+  <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
 </body>
 </html>
 

@@ -1,7 +1,9 @@
 $(document).ready(function() {
   $('#submitBtn').click(function() {
-    if (validateForm())
+    if (validateForm()) {
+      localStorage.setItem('userEmail', $("#email").val());
       $('#loginForm').submit();
+    }
   });
   $('#clearBtn').click(function() {
     $('#accHelp').hide();
@@ -20,6 +22,7 @@ $(document).ready(function() {
     }
     else
       $('#accHelp').hide();
+    return (validEmail && validPass);
   }
 
   function isValidEmail() {
