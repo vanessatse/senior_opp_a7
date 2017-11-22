@@ -7,7 +7,7 @@ $(document).ready(function() {
           localStorage.setItem("img" + i.toString(), "images/art.jpg");
           localStorage.setItem("more" + i.toString(), "list/art.html");
           localStorage.setItem("cont" + i.toString(), "cont/artCont.html");
-          $('#saveArtBtn').text("Unsave");
+          $('#saveArtBtn').prop('disabled', true);
           break;
       }
     }
@@ -21,6 +21,7 @@ $(document).ready(function() {
         localStorage.setItem("img" + i.toString(), "images/cat.png");
         localStorage.setItem("more" + i.toString(), "list/cat.html");
         localStorage.setItem("cont" + i.toString(), "cont/catCont.html");
+        $('#saveCatBtn').prop('disabled', true);
         break;
       }
     }
@@ -34,6 +35,7 @@ $(document).ready(function() {
         localStorage.setItem("img" + i.toString(), "images/solid-silver-gray-fabric_medium.jpg");
         localStorage.setItem("more" + i.toString(), "list/rabbit.html");
         localStorage.setItem("cont" + i.toString(), "cont/rabbitCont.html");
+        $('#saveRabBtn').prop('disabled', true);
         break;
       }
     }

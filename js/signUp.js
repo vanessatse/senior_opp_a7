@@ -5,6 +5,7 @@ $(document).ready(function() {
       localStorage.setItem('userEmail', $("#email").val());
       localStorage.setItem('userFirst', $("#fName").val());
       localStorage.setItem('userLast', $("#lName").val());
+      localStorage.setItem('userPass', $("#pass1").val());
       $('#signUpForm').submit();
     }
   });

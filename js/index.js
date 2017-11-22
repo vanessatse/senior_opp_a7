@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  var loggedIn = localStorage.getItem('userEmail');
+  var loggedIn = localStorage.getItem('loggedIn');
   if (loggedIn) {
     $(".loggedIn").show();
     $(".loggedOut").hide();
@@ -14,7 +14,11 @@ $(document).ready(function() {
   }
 
   $('#logoutBtn').click(function() {
+    var userEmail = localStorage.getItem("userEmail");
+    var userPass = localStorage.getItem("userPass");
     localStorage.clear();
+    localStorage.setItem("userEmail", userEmail);
+    localStorage.setItem("userPass", userPass);
     location.reload(); 
   });
 });
