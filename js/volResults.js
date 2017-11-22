@@ -32,8 +32,8 @@ $(document).ready(function() {
       if (!savedItem) {
         localStorage.setItem("title" + i.toString(), "Adoption Event Coordinator - Offsite Events");
         localStorage.setItem("img" + i.toString(), "images/solid-silver-gray-fabric_medium.jpg");
-        localStorage.setItem("more" + i.toString(), "volInfo");
-        localStorage.setItem("cont" + i.toString(), "volContact.html");
+        localStorage.setItem("more" + i.toString(), "list/rabbit.html");
+        localStorage.setItem("cont" + i.toString(), "cont/rabbitCont.html");
         break;
       }
     }
