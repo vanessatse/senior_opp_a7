@@ -10,7 +10,7 @@ $(document).ready(function() {
   });
 
   $('#homeBtn').click(function() {
-    location.href = "index.html";
+   location.href = "index.html";
   });
 
   $('#zip').change(function() {
@@ -30,6 +30,8 @@ $(document).ready(function() {
     else
       $('#distHelp').hide();
   });
+
+
 
   function validateForm() {
     var validZip = isValidZip();
